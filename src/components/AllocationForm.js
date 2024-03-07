@@ -9,6 +9,7 @@ const AllocationForm = (props) => {
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
 
+
     const submitEvent = () => {
 
             if(cost > remaining) {
@@ -16,6 +17,7 @@ const AllocationForm = (props) => {
                 setCost("");
                 return;
             }
+    
 
         const expense = {
             name: name,
